@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--enlace a css-->
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Menu de navegacion</title><!--titulo de la pagina-->
+</head>
+<body><!--cuerpo de la pagina-->
+    <nav><!--menu de navegacion-->
+        <ul class="menu-nav"><!--lista de menu-->
+            <li><a href="#css">CSS</a></li><!--enlace a css-->
+            <li><a href="#javascript">JavaScript</a></li><!--enlace a javascript-->
+            <li><a href="#tabla-atributos">Tabla de atributos</a></li><!--enlace a tabla de atributos-->
+        </ul>
+    </nav>
+    <!--main de la pagina que contiene las secciones de la pagina-->
+    <!--main significa que es el contenido principal de la pagina-->
+    <main>
+        <section id="css">
+            <h1>¿Qué es CSS?</h1>
+            <p>CSS (Cascading Style Sheets) es un lenguaje que nos permite dar estilo y <br>
+                diseño a nuestras páginas web. Es fundamental para:</p> <!--parrafo de css-->
+            <!--lista de css-->
+            <ul> 
+                <li>Controlar la apariencia visual</li>
+                <li>Crear diseños responsivos</li>
+                <li>Mejorar la experiencia del usuario</li>
+                <li>Mantener consistencia en el diseño</li>
+            </ul>
+            <!--enlace de informacion de css-->
+            <a href="https://www.w3schools.com/css/" target="_blank">
+                <!--imagen de css-->
+                <img src="Imagenes/CSS_LOGO.jpeg" alt="Logo CSS" class="logo-img">
+              </a>
+        </section>
+        <!--seccion de javascript-->
+        <section id="javascript">
+            <h1>JavaScript en la Web</h1>
+            <p>JavaScript es un lenguaje de programación esencial que permite:</p> <!--parrafo de javascript-->
+            <!--lista de javascript-->
+            <ul>
+                <li>Crear interactividad en las páginas web</li>
+                <li>Manipular el contenido en tiempo real</li>
+                <li>Validar formularios</li>
+                <li>Realizar peticiones al servidor</li>
+                <li>Crear animaciones y efectos visuales</li>
+            </ul>
+            <!--enlace de informacion de javascript-->
+            <a href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank">
+                <!--imagen de javascript-->
+                <img src="Imagenes/JS_LOGO.png" alt="Logo JavaScript" class="logo-img">
+              </a>
+        </section>
+        <!--seccion de tabla de atributos-->
+        <section id="tabla-atributos">
+            <h1>Tabla de Atributos CSS</h1>
+            <table class="tabla-css">
+                <thead>
+                    <!--encabezado de la tabla-->
+                    <tr>
+                        <th>Atributo</th>
+                        <th>Descripcion</th>
+                        <th>Valores posibles</th>
+                        <th>Ejemplo</th>
+                        <th>Imagen</th>
+                        <th>Fuente</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!--fila de la tabla-->
+                    <tr>
+                        <td>Font-size</td>
+                        <td>Tamaño de la fuente</td>
+                        <td>px, em, rem, %</td>
+                        <td><code>font-size: 16px;</code></td>
+                        <td><img src="Imagenes/font-size.jpeg" alt="imagen de font-size"></td>
+                        <td> <a href="https://developer.mozilla.org/es/docs/Web/CSS/font-size" target="_blank">MDN Web Docs</a></td>
+                    </tr>
+                    <!--fila de la tabla-->
+                    <tr>
+                        <td>Border-radius</td>
+                        <td>Redondea las esquinas de un elemento</td>
+                        <td>px, em, rem, %</td>
+                        <td><code>border-radius: 10px;</code></td>
+                        <td><img src="Imagenes/border_radius.png" alt="imagen de border-radius"></td>
+                        <td> <a href="https://developer.mozilla.org/es/docs/Web/CSS/border-radius" target="_blank">MDN Web Docs</a></td>
+                    </tr>
+                    <!--fila de la tabla-->
+                    <tr>
+                        <td>Display</td>
+                        <td>Controla la apariencia de un elemento</td>
+                        <td>block, inline, inline-block, flex, grid, none</td>
+                        <td><code>display: flex;</code></td>
+                        <td><img src="Imagenes/display.jpg" alt="imagen de display"></td>
+                        <td> <a href="https://developer.mozilla.org/es/docs/Web/CSS/display" target="_blank">MDN Web Docs</a></td>
+                    </tr>
+                    <!--fila de la tabla-->
+                    <tr>
+                        <td>Flexbox(display:flex)</td>
+                        <td>Permite organizar elementos en una sola dimensión, es decir, <br>
+                            ayudaa a distribuir el espacio entre los ítems de una interfaz y mejorar las capacidades de alineación</td>
+                        <td>flex-direction, justify-content, align-items, flex-wrap</td>
+                        <td><code>display: flex;</code></td>
+                        <td><img src="Imagenes/flexbox.png" alt="imagen de flexbox"></td>
+                        <td> <a href="https://developer.mozilla.org/es/docs/Web/CSS/flexbox" target="_blank">MDN Web Docs</a></td>
+                    </tr>
+                    <!--fila de la tabla-->
+                    <tr>
+                        <td>Position</td>
+                        <td>Define como posicionar un elemento</td>
+                        <td>static, relative, absolute, fixed, sticky</td>
+                        <td><code>position: absolute;</code></td>
+                        <td><img src="Imagenes/position.jpeg" alt="imagen de position"></td>
+                        <th> <a href="https://developer.mozilla.org/es/docs/Web/CSS/position" target="_blank">MDN Web Docs</a></th>
+                    </tr>
+                    <!--fila de la tabla-->
+                    <tr>
+                        <th>Box-shawdon</th>
+                        <th>Aplica sombras a un elemento</th>
+                        <th> offset-x offset-y blur-radius color, puede incluir inset</th>
+                        <th><code>box-shadow: 10px 10px 10px 10px;</code></th>
+                        <th><img src="Imagenes/shadows.png" alt="imagen de box-shadow"></th>
+                        <th> <a href="https://developer.mozilla.org/es/docs/Web/CSS/box-shadow" target="_blank">MDN Web Docs</a></th>
+                    </tr>
+                    <!--fila de la tabla-->
+                    <tr>
+                        <th>Overflow</th>
+                        <th>Controla lo que pasa cuando el contenido sobrepasa su contenedor</th>
+                        <th>visible, hidden, scroll, auto</th>
+                        <th><code>overflow: hidden;</code></th>
+                        <th><img src="Imagenes/overflow.png" alt="imagen de overflow"></th>
+                        <th> <a href="https://developer.mozilla.org/es/docs/Web/CSS/overflow" target="_blank">MDN Web Docs</a></th>
+                    </tr>
+                    <!--fila de la tabla-->
+                    <tr>
+                        <th>Z-index</th>
+                        <th>Controla el orden de los elementos</th>
+                        <th>auto, number</th>
+                        <th><code>z-index: 1;</code></th>
+                        <th><img src="Imagenes/z-index.png" alt="imagen de z-index"></th>
+                        <th> <a href="https://developer.mozilla.org/es/docs/Web/CSS/z-index" target="_blank">MDN Web Docs</a></th>
+                    </tr>
+                    <!--fila de la tabla-->
+                    <tr>
+                        <th>Opacity</th>
+                        <th>Controla la transparencia de un elemento</th>
+                        <th>De 0 (completamente transparente) a 1 (opaco)</th>
+                        <th><code>opacity: 0.5;</code></th>
+                        <th><img src="Imagenes/opacity.jpeg" alt="imagen de opacity"></th>
+                        <th> <a href="https://developer.mozilla.org/es/docs/Web/CSS/opacity" target="_blank">MDN Web Docs</a></th>
+                    </tr>
+                    <!--fila de la tabla-->
+                    <tr>
+                        <th>Margin y Padding</th>
+                        <th>Controla el espacio alrededor de un elemento.<br>
+                             <b>Margin</b> separa elementos externos; <b>Padding</b> el espacio interno.</th>
+                        <th>px, em, rem, %</th>
+                        <th><code>margin: 10px;</code></th>
+                        <th><img src="Imagenes/margin.jpeg" alt="imagen de margin"></th>
+                        <th> <a href="https://developer.mozilla.org/es/docs/Web/CSS/margin" target="_blank">MDN Web Docs</a></th>
+                    </tr>
+                    <!--fila de la tabla-->
+                    <tr>
+                        <th>hsl</th>
+                        <th>Permite definir colores, su sigla significa: <br> 
+                            Color (hue), Saturación (saturation), Luminosidad (luminosity)</th>
+                        <th>hsl(hue, saturation, lightness)</th>
+                        <th><code>hsl(240, 100%, 50%);</code></th>
+                        <th><img src="Imagenes/hsl.png" alt="imagen de hsl"></th>
+                        <th> <a href="https://css-tricks.com/almanac/functions/h/hsl/" target="_blank">CSS-Tricks</a></th>
+                    </tr>
+                    <!--fila de la tabla-->
+                    <tr>
+                        <th>Transition</th>
+                        <th>Permite animaciones mas fluidas</th>
+                        <th>all, color, 0.3s, ease, etc.</th>
+                        <th><code>transition: all 0.3s ease;</code></th>
+                        <th><img src="Imagenes/transition.png" alt="imagen de transition"></th>
+                        <th> <a href="https://developer.mozilla.org/es/docs/Web/CSS/transition" target="_blank">MDN Web Docs</a></th>
+                    </tr>
+                    <!--fila de la tabla-->
+                    <tr>
+                        <th>Line-height</th>
+                        <th>Controla el espacio entre las lineas de un texto</th>
+                        <th> normal, 1.5, 20px, etc.</th>
+                        <th><code>line-height: 1.5;</code></th>
+                        <th><img src="Imagenes/line_heigt.png" alt="imagen de line-height"></th>
+                        <th> <a href="https://developer.mozilla.org/es/docs/Web/CSS/line-height" target="_blank">MDN Web Docs</a></th>
+                    </tr>
+                    <!--fila de la tabla-->
+                    <tr>
+                        <th>Filter</th>
+                        <th>Controla el efecto visual de un elemento</th>
+                        <th>blur, brightness, contrast, etc.</th>
+                        <th><code>filter: blur(10px);</code></th>
+                        <th><img src="Imagenes/filter.jpg" alt="imagen de filter"></th>
+                        <th> <a href="https://developer.mozilla.org/es/docs/Web/CSS/filter" target="_blank">MDN Web Docs</a></th>
+                    </tr>  
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <!--pie de pagina-->
+        <p>Elaborado: Sara Pataroyo <br> FUENTES: <a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank">MDN Web Docs</a>, <a href="https://www.w3schools.com/css/" target="_blank">W3Schools</a>, <a href="https://css-tricks.com/" target="_blank">CSS-Tricks</a></p>
+    </footer>
+</body>
+</html>

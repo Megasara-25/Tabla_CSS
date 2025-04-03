@@ -1,0 +1,147 @@
+/* Css de todos los elementos para que no tenga margen, padding, box-sizing*/
+* {
+    margin: 0;/*margen*/
+    padding: 0;/*padding es el espacio interno de un elemento*/
+    box-sizing: border-box;/*ancho y alto del elemento*/
+}
+/* Estilos del body para que tenga una fuente, un fondo y un color*/
+body {
+    font-family: 'Franklin Gothic Medium', Arial, sans-serif;/*Tipo de fuente*/     
+    background: linear-gradient(to right, #4dd0e1, #aed581); /* degrade del fondo*/
+    color: #333; /* color del texto*/
+}
+/* Estilos del nav para que tenga un texto, un padding, un fondo, una sombra y un texto sombreado*/
+nav {
+    text-align: center;/*alineacion del texto*/
+    padding: 20px 0;/*Espacio interno del nav*/
+    background-color: rgba(0, 121, 107, 0.8);/*color*/
+    text-shadow: 2px 2px 4px rgba(0, 0, 255, 0.4); /* sombra azul suave del texto*/
+}
+/* Estilos del menu de navegacion para que tenga una lista, un flex, un justify-content y un gap*/
+.menu-nav {
+    list-style: none;/*quita los puntos de la lista*/
+    display: flex;/*debe crecer o encogerse para ajustarse al espacio de los enlaces*/
+    justify-content: center;/*alineacion del texto*/
+    gap: 30px;/*espacio entre los enlaces*/
+}
+/* Estilos del menu de navegacion con enlaces*/
+.menu-nav a {
+    color: #ffffff;/*color de la letra*/
+    font-size: 1.1em;/*tamaño de la letra*/
+    font-weight: bold;/*negrilla */
+
+}
+/* Estilos del menu de navegacion con enlaces al pasar el mouse*/
+.menu-nav a:hover {
+    color: #004d40;/*color de la letra al pasar el mouse*/   
+}
+/* Estilos del main de section*/
+main section {
+    background-color: #ffffff;/*color del fondo*/
+    padding: 25px;/*padding es el espacio interno del main hacia arriba, abajo, izquierda y derecha*/
+    margin: 30px 20px;/*margen es el espacio externo del main hacia arriba, abajo, izquierda y derecha*/
+    border-radius: 12px;/*borde es el espacio entre el contenido y el borde hacia arriba, abajo, izquierda y derecha*/
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);/*sombra es la sombra del main*/
+}
+/* Estilos del main con h1 de section*/
+main section h1 {
+    font-size: 1.8em;/*tamaño de la letra*/
+    color: #00796b;/*color de la letra*/
+    margin-bottom: 15px;/*espacio entre el contenido y el borde hacia abajo*/
+    border-bottom: 2px solid #00796b;/*borde es el espacio entre el contenido y el borde hacia abajo*/
+    padding-bottom: 5px;/*padding es el espacio interno del main hacia abajo*/
+    text-shadow: 1px 1px 3px rgba(0, 121, 107, 0.3);/*sombra de la letra*/
+}
+/* Estilos del main con ul de section para que tenga un margen*/
+main ul {
+    list-style-type: disc;/*lista*/
+    margin-left: 20px;/*espacio entre el contenido y el borde hacia la izquierda*/
+    margin-top: 10px;/* espacio entre el contenido y el borde hacia arriba*/
+}
+/* Estilos del main con li de section*/
+main ul li {
+    margin-bottom: 8px;/*espacio entre el contenido y el borde hacia abajo*/   
+}
+/* Estilos del los logos de img*/
+.logo-img {
+    width: 120px;/*tamaño de la imagen*/
+    margin-top: 15px;/*espacio entre el contenido y el borde hacia arriba*/
+    transition: transform 0.3s ease;/*transicion de la imagen*/
+    border-radius: 10px;/*borde de la imagen*/
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);/*sombra de la imagen*/
+}
+/* Estilos del los logos de img al pasar el mouse para que se agrande*/
+.logo-img:hover {
+    transform: scale(1.1);/*escala de la imagen al pasar el mouse*/
+}
+/* Estilos de la tabla*/
+.tabla-css {
+    width: 100%;/*tamaño de la tabla*/      
+    border-collapse: collapse;/*borde de la tabla*/
+    margin-top: 15px;/*espacio entre el contenido y el borde hacia arriba*/
+}
+/* Estilos de la tabla con th y td*/
+.tabla-css th, .tabla-css td {
+    border: 1px solid #0c0c0c;/*borde de la tabla*/
+    padding: 12px;/*espacio interno de la tabla*/
+    text-align: center;/*alineacion del texto*/
+    vertical-align: middle;/*alineacion del texto*/
+}
+/* Estilos de la tabla con thead*/
+.tabla-css thead {
+    background-color: #00796b;/*color de la tabla*/
+    color: white;/*color de la letra*/
+}
+/* Estilos de la tabla con tbody y tr para que tenga un color*/
+.tabla-css tbody tr:nth-child(even) {
+    background-color: #e6f5d0;/*color de la tabla*/
+}
+/* Estilos de la tabla con tbody y tr para que tenga un color al pasar el mouse*/
+.tabla-css tbody tr:hover {
+    background-color: #d0f4f2;/*color de la tabla al pasar el mouse*/
+}
+/* Estilos de la tabla con img para que tenga un tamaño*/
+.tabla-css img {
+    max-width: 100px;/*tamaño de la imagen de la tabla*/
+    border-radius: 8px;/*borde de la imagen de la tabla*/
+}
+/* Estilos de los enlaces*/
+a {
+    color: #00796b;/*color del texto de los enlaces*/
+    text-decoration: none;/*decoracion del texto de los enlaces*/
+    font-weight: 600;/*negrita del texto de los enlaces*/
+}
+/* Estilos de los enlaces al pasar el mouse para que se subraye*/
+a:hover {
+    text-decoration: underline;/*decoracion al pasar el mouse*/
+    color: #004d40;/*color del texto al pasar el mouse*/
+}
+/* Estilos de los enlaces al pasar el mouse*/
+@media (max-width: 768px) {
+    .menu-nav {
+        flex-direction: column; /* Apila los enlaces verticalmente */
+        align-items: center; /* Centra los enlaces horizontalmente */
+    }
+    /* Estilos de los enlaces al pasar el mouse para que tenga un tamaño*/
+    .tabla-css img {
+        max-width: 80px;/*tamaño de la imagen*/
+    }
+}
+footer {
+    text-align: center;/*alineacion*/
+    padding: 20px 0;/*padding*/
+    background-color: rgba(0, 121, 107, 0.8);/*color*/
+    text-shadow: 2px 2px 4px rgba(83, 85, 124, 0.4); /*sombra*/
+}
+/* Estilos del footer con p*/
+footer p {
+    color: #ffffff;/*color del texto*/
+    font-size: 1.0em;/*tamaño del texto*/
+    font-weight: bold;/*negrita del texto*/
+}
+/* Estilos del footer con a*/
+footer a {
+    color: #ffffff;/*color del texto*/
+    font-size: 1.0em;/*tamaño del texto*/
+    font-weight: bold;/*negrita del texto*/
+}
